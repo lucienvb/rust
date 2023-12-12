@@ -16,7 +16,6 @@ fn  split(str: String, delimiter: char) -> Vec<String> {
                 current_string.clear();
             }
         }
-        println!("{}", c);
     }
     res
 }
