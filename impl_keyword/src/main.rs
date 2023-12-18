@@ -1,3 +1,9 @@
+trait ExampleTrait {
+    fn print_hello();
+    fn forty_two() -> i32;
+    fn forty_two_validator(num: i32) -> bool;
+}
+
 struct Example;
 
 fn main() {
@@ -9,7 +15,7 @@ fn main() {
     println!("{} equals 42 is {}", num2, Example::forty_two_validator(num2));
 }
 
-impl Example {
+impl ExampleTrait for Example {
     fn print_hello() {
         println!("Hello!");
     }
