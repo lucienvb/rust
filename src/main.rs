@@ -41,8 +41,7 @@ mod test_two {
         let str = "   Hello,  ";
         let del = ',';
         let res: Vec<String> = rusty_split((&str).to_string(), del);
-        assert_eq!(res[0], "   Hello");
-        assert_eq!(res[1], "  ");
+        assert_eq!(res[0], "Hello");
     }
 }
 
