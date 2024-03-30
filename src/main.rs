@@ -21,7 +21,7 @@ fn  rusty_split(str: String, delimiter: char) -> Vec<String> {
 }
 
 #[cfg(test)]
-mod tests {
+mod test_one {
     use crate::rusty_split;
     #[test]
     fn test_hello_world_one() {
@@ -34,7 +34,7 @@ mod tests {
 }
 
 #[cfg(test)]
-mod tests {
+mod test_two {
     use crate::rusty_split;
     #[test]
     fn test_hello_world_two() {
@@ -44,4 +44,8 @@ mod tests {
         assert_eq!(res[0], "");
         assert_eq!(res[1], "");
     }
+}
+
+fn main() {
+    println!("Hello world")
 }
