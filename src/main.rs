@@ -38,11 +38,11 @@ mod test_two {
     use crate::rusty_split;
     #[test]
     fn test_hello_world_two() {
-        let str = "   Hello,  \t\0world!    ";
-        let del = ' ';
+        let str = "   Hello,  ";
+        let del = ',';
         let res: Vec<String> = rusty_split((&str).to_string(), del);
-        assert_eq!(res[0], "");
-        assert_eq!(res[1], "");
+        assert_eq!(res[0], "   Hello");
+        assert_eq!(res[1], "  ");
     }
 }
 
